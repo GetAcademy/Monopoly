@@ -1,17 +1,21 @@
-﻿using Monopoly.Place;
+﻿using Monopoly.Places;
 
 namespace Monopoly
 {
     public class Board
     {
-        private Place.Place[] _places;
+        private Place[] _places;
 
         public Board()
         {
-            _places = new Place.Place[]
+            _places = new Place[]
             {
-                new Place.Place("Start"),
-                new BuildableProperty("Parkveien"),
+                new Place("Start"),
+                new BuildableProperty("Parkveien", 1200),
+                new Place("Prøv lykken"),
+                new BuildableProperty("Kirkeveien", 1200),
+                new Place("Betal skatt"),
+                new Place("Betal skatt"),
             };
         }
     }

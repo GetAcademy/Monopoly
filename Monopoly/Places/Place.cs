@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Monopoly.Actions;
 
-namespace Monopoly.Place
+namespace Monopoly.Places
 {
     public class Place
     {
@@ -11,9 +12,9 @@ namespace Monopoly.Place
             Name = name;
         }
 
-        public IEnumerable<Action.Action> GetActions()
+        public IEnumerable<Action> GetActions()
         {
-            return new Action.Action[] { };
+            return new Action[] { };
         }
     }
 }

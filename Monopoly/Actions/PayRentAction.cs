@@ -1,4 +1,4 @@
-﻿namespace Monopoly.Action
+﻿namespace Monopoly.Actions
 {
     public class PayRentAction : Action
     {
