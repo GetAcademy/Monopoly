@@ -21,7 +21,6 @@ namespace Monopoly.Places
 
             if (Owner == null) actions.Add(new BuyAction());
             else if(Game.Instance.CurrentPlayer != Owner) actions.Add(new PayRentAction());
-            else actions.Add(new BuildAction());
 
             return actions;
         }

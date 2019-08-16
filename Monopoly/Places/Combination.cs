@@ -1,4 +1,6 @@
-﻿namespace Monopoly.Places
+﻿using System.Linq;
+
+namespace Monopoly.Places
 {
     public class Combination
     {
@@ -11,6 +13,11 @@
             {
                 property.Combination = this;
             }
+        }
+
+        public bool IsAllOwnedBy(Player owner)
+        {
+            return _properties.All(p => p.Owner == owner);
         }
     }
 }
