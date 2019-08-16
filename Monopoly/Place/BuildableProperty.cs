@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Monopoly
+﻿namespace Monopoly.Place
 {
-    class BuildableProperty
+    class BuildableProperty : Property
     {
+        public BuildableProperty(string name) : base(name)
+        {
+            
+        }
     }
 }

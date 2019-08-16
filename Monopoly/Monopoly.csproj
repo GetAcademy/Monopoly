@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action\Action.cs" />
+    <Compile Include="Action\BuildAction.cs" />
+    <Compile Include="Action\PayRentAction.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Place\BuildableProperty.cs" />
+    <Compile Include="Place\Place.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Place\Property.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

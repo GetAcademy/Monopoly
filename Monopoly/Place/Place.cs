@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Monopoly
+namespace Monopoly.Place
 {
-    class Place
+    public class Place
     {
+        public string Name { get; }
+
+        public Place(string name)
+        {
+            Name = name;
+        }
+
+        public IEnumerable<Action.Action> GetActions()
+        {
+            return new Action.Action[] { };
+        }
     }
 }
