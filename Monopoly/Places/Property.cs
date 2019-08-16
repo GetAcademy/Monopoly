@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Dynamic;
 using Monopoly.Actions;
 
 namespace Monopoly.Places
@@ -18,8 +20,9 @@ namespace Monopoly.Places
             var actions = new List<Action>();
 
             if (Owner == null) actions.Add(new BuyAction());
-            else actions.Add(new PayRentAction());
-            
+            else if(Game.Instance.CurrentPlayer != Owner) actions.Add(new PayRentAction());
+            else actions.Add(new BuildAction());
+
             return actions;
         }
     }

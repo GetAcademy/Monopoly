@@ -4,8 +4,13 @@
     {
         private Board _board;
         private Player[] _players;
+        public Player CurrentPlayer { get; private set; }
 
-        public Game()
+        private static Game _instance = null;
+
+        public static Game Instance => _instance ?? (_instance = new Game());
+
+        private Game()
         {
             _board = new Board();
             _players = new Player[]
