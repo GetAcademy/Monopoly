@@ -5,6 +5,7 @@ namespace Monopoly
     public class Board
     {
         private Place[] _places;
+        private Combination[] _combinations;
 
         public Board()
         {
@@ -38,7 +39,17 @@ namespace Monopoly
             var ullevålHageby = new BuildableProperty("Ullevål Hageby", 7000);
             var rådhusplassen = new BuildableProperty("Rådhusplassen", 0800);
 
-
+            _combinations = new Combination[]
+            {
+                new Combination(parkveien, kirkeveien), 
+                new Combination(kongensGate, prinsensGate, øvreSlottsgate), 
+                new Combination(nedreSlottsgate, trondheimsveien, nobelsGate), 
+                new Combination(grensen, gabelsGate, ringgata), 
+                new Combination(bygdøyAlle, skarpsno, slemdal), 
+                new Combination(karlJohansGate, stortorget, torggata), 
+                new Combination(trosterudveien, pilestredet, sinsen), 
+                new Combination(ullevålHageby, rådhusplassen), 
+            };
             _places = new Place[]
             {
                 new Place("Start"),

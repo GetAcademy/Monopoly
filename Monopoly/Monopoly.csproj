@@ -43,6 +43,7 @@
     <Compile Include="Board.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Places\BuildableProperty.cs" />
+    <Compile Include="Places\Combination.cs" />
     <Compile Include="Places\Place.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />

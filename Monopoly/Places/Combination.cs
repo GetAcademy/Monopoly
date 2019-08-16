@@ -7,6 +7,10 @@
         public Combination(params BuildableProperty[] properties)
         {
             _properties = properties;
+            foreach (var property in properties)
+            {
+                property.Combination = this;
+            }
         }
     }
 }
