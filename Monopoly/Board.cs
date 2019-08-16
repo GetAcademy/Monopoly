@@ -37,7 +37,7 @@ namespace Monopoly
             var sinsen = new BuildableProperty("Sinsen", 6400);
 
             var ullevålHageby = new BuildableProperty("Ullevål Hageby", 7000);
-            var rådhusplassen = new BuildableProperty("Rådhusplassen", 0800);
+            var rådhusplassen = new BuildableProperty("Rådhusplassen", 8000);
 
             _combinations = new Combination[]
             {
