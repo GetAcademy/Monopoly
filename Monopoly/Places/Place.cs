@@ -12,7 +12,7 @@ namespace Monopoly.Places
             Name = name;
         }
 
-        public IEnumerable<Action> GetActions()
+        public virtual IEnumerable<Action> GetActions()
         {
             return new Action[] { };
         }
