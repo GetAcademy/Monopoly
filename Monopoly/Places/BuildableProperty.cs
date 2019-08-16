@@ -10,7 +10,6 @@ namespace Monopoly.Places
 
         public BuildableProperty(string name, int price) : base(name, price)
         {
-
         }
 
         public override IEnumerable<Action> GetActions()
