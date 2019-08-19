@@ -1,4 +1,6 @@
-﻿namespace Monopoly
+﻿using System;
+
+namespace Monopoly
 {
     public class Game
     {
@@ -21,10 +23,35 @@
                 new Player("Espen"), 
             };
             _die = new Die();
+            GoToNextPlayer();
         }
+
+        private void GoToNextPlayer()
+        {
+            if (CurrentPlayer == null)
+            {
+                CurrentPlayer = _players[0];
+                return;
+            }
+
+            var index = Array.IndexOf(_players, CurrentPlayer);
+            index = (index + 1) % _players.Length;
+        }
+
         public void Run()
         {
-            
+            while (true)
+            {
+                var player = Game.Instance.CurrentPlayer;
+                Console.WriteLine($"Det er {player.Name} sin tur.");
+                Console.WriteLine("Trykk enter for å kaste terningen.");
+                var number = _die.Roll();
+                Console.WriteLine($"Du kastet {number}.");
+                var place = _board.Move(number);
+
+
+
+            }
         }
     }
 }

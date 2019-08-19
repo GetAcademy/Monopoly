@@ -94,5 +94,10 @@ namespace Monopoly
                 rådhusplassen
             };
         }
+
+        public Place Move(int number)
+        {
+            
+        }
     }
 }
