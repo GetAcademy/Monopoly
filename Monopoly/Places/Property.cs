@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Dynamic;
 using Monopoly.Actions;
 
 namespace Monopoly.Places
@@ -23,6 +21,11 @@ namespace Monopoly.Places
             else if(Game.Instance.CurrentPlayer != Owner) actions.Add(new PayRentAction());
 
             return actions;
+        }
+
+        public virtual int GetRent()
+        {
+            return _price / 8;
         }
     }
 }

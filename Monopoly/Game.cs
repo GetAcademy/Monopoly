@@ -7,6 +7,7 @@
         public Player CurrentPlayer { get; private set; }
 
         private static Game _instance = null;
+        private Die _die;
 
         public static Game Instance => _instance ?? (_instance = new Game());
 
@@ -19,6 +20,7 @@
                 new Player("Pål"), 
                 new Player("Espen"), 
             };
+            _die = new Die();
         }
         public void Run()
         {

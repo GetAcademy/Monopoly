@@ -42,6 +42,7 @@
     <Compile Include="Actions\BuyAction.cs" />
     <Compile Include="Actions\PayRentAction.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="Die.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Places\BuildableProperty.cs" />
     <Compile Include="Places\Combination.cs" />
